@@ -38,7 +38,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/write")
 	public String write(HttpServletRequest request) {
-		String mwriter = request.getParameter("mwrtier");
+		String mwriter = request.getParameter("mwriter");
 		String mcontent = request.getParameter("mcontent");
 		
 		IDao dao = sqlSession.getMapper(IDao.class);
